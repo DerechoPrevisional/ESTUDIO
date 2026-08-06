@@ -30,7 +30,7 @@ Sitio del Estudio Jurídico Gonzalez y Asociados (Liliana Gonzalez, Mat. N.º 12
 5. Andá a **Settings → Pages** (en el menú lateral del repositorio).
 6. En "Branch", elegí `main` y la carpeta `/ (root)`, y guardá.
 7. Esperá 1-2 minutos. Tu sitio va a quedar publicado en:
-   `https://tu-usuario.github.io/estudio-gonzalez/`
+   `[(https://derechoprevisional.github.io/ESTUDIO) ]`
 
 Para verificar que todo subió bien: en la página principal del repositorio tenés que ver los 8 archivos `.html`, el archivo `styles.css` y la carpeta `img` — todos al mismo nivel.
 
