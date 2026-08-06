@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Liliana Gonzalez — Abogada Previsional en Mendoza</title>
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .about-grid{display:grid; grid-template-columns:0.45fr 1.55fr; gap:40px; align-items:start;}
+  @media (max-width:860px){ .about-grid{grid-template-columns:1fr;} }
+  .photo-real{border-radius:var(--radius); aspect-ratio:4/5; object-fit:cover; width:100%; max-width:220px; box-shadow:0 14px 30px rgba(15,51,73,0.14);}
+  @media (max-width:860px){ .photo-real{max-width:160px; margin:0 auto;} }
+  .value-list{display:grid; gap:18px; margin-top:16px;}
+  .value-item{display:flex; gap:16px; align-items:flex-start;}
+  .value-ic{width:44px; height:44px; border-radius:12px; background:var(--sage-light); display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0;}
+</style>
+</head>
+<body>
+<header>
+  <div class="navbar wrap">
+    <a href="index.html" class="brand"><img src="img/logo.png" alt="Logo Estudio Gonzalez y Asociados" class="brand-logo">Gonzalez y Asociados</a>
+    <div class="menu-row">
+      <nav><ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="areas.html">Especialidades</a></li>
+        <li><a href="sobre-mi.html" aria-current="page">Sobre mí</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul></nav>
+      <a class="nav-cta" href="contacto.html#calendario">Consulta</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Sobre mí</span>
+    <h1>Liliana Gonzalez — Abogada y Lic. en Gestión de Empresas</h1>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap about-grid">
+    <img class="photo-real reveal" src="img/liliana-gonzalez.jpeg" alt="Liliana Gonzalez, abogada y Licenciada en Gestión de Empresas, Mendoza">
+    <div class="reveal">
+      <p style="font-size:18px; color:#33454a; margin-bottom:20px;">Soy Liliana Gonzalez, con Matrícula Provincial y Federal, al frente de Estudio Gonzalez y Asociados. La matrícula federal me habilita a representar casos en todo el territorio de la República Argentina — algo especialmente relevante en Derecho Previsional, ya que ANSES y los organismos de seguridad social son de alcance nacional, sin importar en qué provincia vivas.</p>
+      <p style="font-size:18px; color:#33454a; margin-bottom:20px;">Además soy Licenciada en Gestión de Empresas. Decidí enfocar mi estudio en Derecho Previsional porque veo, todos los días, cuánta gente no reclama lo que le corresponde simplemente por no saber que puede hacerlo.</p>
+      <p style="font-size:18px; color:#33454a; margin-bottom:20px;">Mi formación en Gestión de Empresas complementa el trabajo legal con una mirada organizada y prolija de cada trámite: cálculos claros, plazos bien seguidos y expedientes ordenados de principio a fin.</p>
+      <p style="font-size:18px; color:#33454a; margin-bottom:20px;">Aunque el estudio recién está empezando en esta especialidad en Mendoza, eso significa que cada consulta recibe atención personalizada — no sos un expediente más entre cientos.</p>
+
+      <h2 style="font-size:22px; margin-top:36px; margin-bottom:18px;">Cómo trabajamos</h2>
+      <div class="value-list">
+        <div class="value-item"><div class="value-ic">🔍</div><div><h3 style="font-size:17px;">Análisis honesto</h3><p style="font-size:15.5px; color:#55655f;">Si tu caso no tiene fundamento para reclamar, te lo decimos desde el principio.</p></div></div>
+        <div class="value-item"><div class="value-ic">🗣️</div><div><h3 style="font-size:17px;">Lenguaje claro</h3><p style="font-size:15.5px; color:#55655f;">Explicamos cada trámite sin jerga legal innecesaria.</p></div></div>
+        <div class="value-item"><div class="value-ic">📲</div><div><h3 style="font-size:17px;">Acompañamiento constante</h3><p style="font-size:15.5px; color:#55655f;">Te mantenemos informado del estado de tu expediente en cada etapa.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap" style="text-align:center;">
+    <h2>¿Charlamos sobre tu situación?</h2>
+    <p style="color:#4a5a5e; margin-bottom:28px;">Coordinemos un turno para conversar sobre tu situación.</p>
+    <a href="contacto.html#calendario" class="btn-primary">💬 Consulta</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand">Estudio Gonzalez y Asociados</div><p>Estudio jurídico especialista en Derecho Previsional.</p><p>Matrícula Provincial y Federal — Colegio de Abogados de Mendoza</p></div>
+      <div><h3>Contacto</h3><ul><li><a href="https://wa.me/5492615358230?text=Hola%2C%20quiero%20hacer%20una%20consulta%20previsional" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-3.1.81.83-3.02-.2-.31A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.4-5.9c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.47-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.59 4.12 3.63.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28z"/></svg> WhatsApp: +54 9 261 535-8230</a></li><li><a href="mailto:gonzalezyasociadoslegales@gmail.com">✉️ gonzalezyasociadoslegales@gmail.com</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Espejo+333+Ciudad+de+Mendoza" target="_blank" rel="noopener">📍 Espejo 333, Ciudad de Mendoza</a></li></ul></div>
+      <div><h3>Navegación</h3><ul><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Estudio Gonzalez y Asociados.</span><span>Sitio en construcción</span></div>
+  </div>
+</footer>
+<a href="https://wa.me/5492615358230?text=Hola%2C%20quiero%20hacer%20una%20consulta%20previsional" target="_blank" rel="noopener" class="wa-float" aria-label="Contactar por WhatsApp"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-3.1.81.83-3.02-.2-.31A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.4-5.9c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.47-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.59 4.12 3.63.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28z"/></svg></a>
+<script src="script.js"></script>
+</body>
+</html>
