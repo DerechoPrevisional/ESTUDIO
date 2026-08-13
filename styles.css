@@ -161,6 +161,10 @@ footer a:hover{color:var(--white);}
 .wa-float{position:fixed; bottom:26px; right:26px; z-index:60; width:60px; height:60px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 26px rgba(37,211,102,0.45); text-decoration:none; color:white; animation:float 3s ease-in-out infinite;}
 .wa-icon{width:18px; height:18px; vertical-align:-3px; margin-right:5px; flex-shrink:0; color:#25D366;}
 .wa-float svg{width:30px; height:30px; color:#FFFFFF;}
+.foot-social{display:flex; gap:14px; margin-top:16px;}
+.foot-social a{color:rgba(255,255,255,0.7); transition:color .15s ease;}
+.foot-social a:hover{color:#fff;}
+.social-icon{width:22px; height:22px;}
 .info-ic svg.wa-icon{width:22px; height:22px; margin-right:0; vertical-align:0; color:#25D366;}
 @keyframes float{0%,100%{transform:translateY(0);} 50%{transform:translateY(-6px);}}
 
