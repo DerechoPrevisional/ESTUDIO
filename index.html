@@ -29,6 +29,7 @@ src="https://www.facebook.com/tr?id=1393382479496947&ev=PageView&noscript=1"
 <style>
   .hero-inner{max-width:760px; margin:0 auto; text-align:center;}
   .hero-inner .btn-row{justify-content:center;}
+  .topic-tags{display:flex; justify-content:center; flex-wrap:wrap; gap:8px; margin:22px 0 6px; font-size:14.5px; font-weight:600; color:rgba(255,255,255,0.65);}
   h1 span{color:var(--gold); background:none;}
   .assistant-wrap{max-width:560px; margin:0 auto;}
   .chat-card{background:var(--white); border-radius:24px; border:1px solid var(--line); box-shadow:0 24px 60px rgba(15,51,73,0.12); overflow:hidden;}
@@ -74,7 +75,7 @@ src="https://www.facebook.com/tr?id=1393382479496947&ev=PageView&noscript=1"
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul></nav>
-      <a class="nav-cta" href="contacto.html#calendario">Consulta</a>
+      <a class="nav-cta" href="https://wa.me/5492615358230?text=Hola%2C%20tengo%20una%20consulta%20previsional" target="_blank" rel="noopener">Consulta</a>
       <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -84,11 +85,13 @@ src="https://www.facebook.com/tr?id=1393382479496947&ev=PageView&noscript=1"
 
 <section class="zone-action" style="padding:88px 0 76px;">
   <div class="wrap hero-inner">
-    <span class="eyebrow">Asistente virtual disponible ahora</span>
-    <h1>Su jubilación, defendida por quien entiende <span>de números y de personas.</span></h1>
-    <p class="lead" style="margin:0 auto;">Especialistas en Derecho Previsional: jubilaciones, reajustes, pensiones e incapacidad. Agende su consulta en menos de 2 minutos, sin llamadas ni esperas.</p>
+    <h1>¿Te falta información sobre tu jubilación, pensión o reclamo previsional?</h1>
+    <p class="lead" style="margin:0 auto;">Revisamos tu situación y te orientamos sobre los pasos a seguir — sin vueltas.</p>
+    <div class="topic-tags">
+      <span>Jubilaciones</span><span>·</span><span>Aportes</span><span>·</span><span>Pensiones</span><span>·</span><span>Reajustes</span>
+    </div>
     <div class="btn-row">
-      <a href="contacto.html#calendario" class="btn-primary">💬 Consulta</a>
+      <a href="https://wa.me/5492615358230?text=Hola%2C%20tengo%20una%20consulta%20previsional" target="_blank" rel="noopener" class="btn-primary">💬 CONSULTAR POR WHATSAPP</a>
       <a href="areas.html" class="btn-secondary">Ver especialidades</a>
     </div>
   </div>
@@ -98,8 +101,8 @@ src="https://www.facebook.com/tr?id=1393382479496947&ev=PageView&noscript=1"
   <div class="wrap">
     <div class="sec-head reveal" style="margin-left:auto; margin-right:auto; text-align:center;">
       <span class="sec-eyebrow">Asistente virtual</span>
-      <h2>Contanos tu caso y agendá un turno</h2>
-      <p>Sin IA, sin sorpresas: te pregunta el tema y te lleva directo a agendar.</p>
+      <h2>Contanos tu caso, sin compromiso</h2>
+      <p>Te preguntamos el tema y te conectamos directo con el estudio por WhatsApp — nada de formularios largos.</p>
     </div>
     <div class="assistant-wrap reveal">
       <div class="chat-card" id="assistant-card">
@@ -155,13 +158,16 @@ src="https://www.facebook.com/tr?id=1393382479496947&ev=PageView&noscript=1"
           addBubble(topic, 'user');
           chips.remove();
           setTimeout(function(){
-            addBubble('¡Perfecto! Ya podés elegir el horario que más te convenga.', 'bot');
+            addBubble('¡Gracias, ' + name.split(' ')[0] + '! Ya podés escribirnos directo por WhatsApp y seguimos la charla ahí.', 'bot');
             const link = document.createElement('a');
-            link.href = 'contacto.html?nombre=' + encodeURIComponent(name) + '&tema=' + encodeURIComponent(topic) + '#calendario';
+            const waText = 'Hola, soy ' + name + '. Quería consultar sobre: ' + topic;
+            link.href = 'https://wa.me/5492615358230?text=' + encodeURIComponent(waText);
+            link.target = '_blank';
+            link.rel = 'noopener';
             link.className = 'btn-primary';
             link.style.marginTop = '4px';
             link.style.alignSelf = 'flex-start';
-            link.textContent = '📅 Ver turnos disponibles';
+            link.textContent = '💬 Continuar por WhatsApp';
             body.appendChild(link);
             body.scrollTop = body.scrollHeight;
           }, 500);
@@ -196,7 +202,7 @@ src="https://www.facebook.com/tr?id=1393382479496947&ev=PageView&noscript=1"
       <a href="previsional.html#pension" class="area-card reveal"><div class="area-ic">🕊️</div><h3>Pensión por fallecimiento</h3><p>Gestión de pensión para cónyuges, convivientes e hijos.</p><span class="area-link">Conocer más →</span></a>
       <a href="previsional.html#incapacidad" class="area-card reveal"><div class="area-ic">🩺</div><h3>Incapacidad laboral</h3><p>Retiro por invalidez y reclamos ante rechazos de ANSES.</p><span class="area-link">Conocer más →</span></a>
       <a href="areas.html" class="area-card reveal"><div class="area-ic">📋</div><h3>Reclamos administrativos</h3><p>Impugnaciones, recursos y seguimiento de expedientes.</p><span class="area-link">Conocer más →</span></a>
-      <a href="areas.html" class="area-card reveal"><div class="area-ic">💬</div><h3>Otras consultas</h3><p>Civil, laboral y familia. Contanos tu caso y te orientamos.</p><span class="area-link">Conocer más →</span></a>
+      <a href="blog-moratoria-previsional.html" class="area-card reveal"><div class="area-ic">📆</div><h3>Moratoria previsional</h3><p>Cómo completar años de aporte faltantes para poder jubilarte.</p><span class="area-link">Conocer más →</span></a>
     </div>
   </div>
 </section>
