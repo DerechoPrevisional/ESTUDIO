@@ -22,3 +22,16 @@
   }, {threshold:0.15});
   document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
 })();
+
+// Registrar como evento "Contact" en Meta Pixel, y como evento en el dataLayer
+// (para GA4 vía GTM) cada clic en un link de WhatsApp — mide conversiones reales.
+(function(){
+  window.dataLayer = window.dataLayer || [];
+  document.addEventListener('click', function(e){
+    const link = e.target.closest('a[href*="wa.me"]');
+    if(link){
+      if(typeof fbq === 'function'){ fbq('track', 'Contact'); }
+      window.dataLayer.push({ event: 'whatsapp_click', link_url: link.href });
+    }
+  });
+})();
